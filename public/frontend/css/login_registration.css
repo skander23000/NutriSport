@@ -1,0 +1,218 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+body:before {
+    content: "";
+    position: absolute;
+    right: 0rem;
+    bottom: 0rem;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/fond-de-nourriture-d-alimentation-équilibrée-121937194.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(0.6);
+    z-index: -4;
+    /*border-radius: 50%;
+  box-shadow: 10px #f7f7f9;*/
+}
+
+/********************************************************LOGIN*********************************************************/
+.login_container {
+    width: 600px;
+    margin: 200px auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+/* Form Styles */
+.login_container form {
+    padding: 40px;
+}
+.login_container form h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-weight: normal;
+    color: #555555;
+    text-align: center;
+}
+.login_container form input[type="text"],
+.login_container form input[type="password"] {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+}
+.login_container .holder {
+    position: relative;
+    margin-bottom: 1rem;
+}
+.login_container .holder span {
+    display: block;
+    margin-top: 0.5rem;
+    color: red;
+    font-size: 14px;
+}
+.login_container .alert {
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    color: green;
+    font-size: 16px;
+}
+.login_container .danger {
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    color: red;
+    font-size: 16px;
+}
+.login_container form button[type="submit"] {
+    display: block;
+    width: 542px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #ffffff;
+    font-size: 17px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.login_container form button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+.login_container form p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #555555;
+}
+.login_container form p a {
+    margin-left: 7px;
+    color: #4caf50;
+    text-decoration: none;
+}
+.login_container form p a:hover {
+    text-decoration: underline;
+}
+
+.eye-icon-login {
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    right: -10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+/********************************************************REGISTRATION*********************************************************/
+.registration_container {
+    width: 600px;
+    margin: 150px auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+/* Form Styles */
+.registration_container form {
+    padding: 40px;
+}
+.registration_container form h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-weight: normal;
+    color: #555555;
+    text-align: center;
+}
+.registration_container form input[type="text"],
+.registration_container form input[type="email"],
+.registration_container form input[type="password"] {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+}
+.registration_container .holder {
+    position: relative;
+    margin-bottom: 1rem;
+}
+.registration_container span {
+    display: block;
+    margin-top: 0.5rem;
+    color: red;
+    font-size: 14px;
+}
+.registration_container .alert {
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    color: green;
+    font-size: 16px;
+}
+.registration_container .danger {
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    color: red;
+    font-size: 16px;
+}
+.registration_container form button[type="submit"] {
+    display: block;
+    width: 542px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #ffffff;
+    font-size: 17px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.registration_container form button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+.registration_container form p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #555555;
+}
+.registration_container form p a {
+    margin-left: 7px;
+    color: #4caf50;
+    text-decoration: none;
+}
+.registration_container form p a:hover {
+    text-decoration: underline;
+}
+.eye-icon-registration-1 {
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    right: -10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+}
+.eye-icon-registration-2 {
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    right: -10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+}

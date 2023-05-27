@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    background-color: #f3f3f3;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+/********************************************************HEADER*********************************************************/
+.content_header img {
+    width: 130px;
+    height: 110px;
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+}
+header {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+header .content_header {
+    display: flex;
+    justify-content: flex-end;
+}
+header a {
+    display: flex;
+    margin-right: auto;
+
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+}
+
+/*********************************/
+header .home {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+header .bienvenue a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 320px;
+    margin: 0 100px;
+    font-size: 20px;
+}
+header .bienvenue {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+header .home a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 10px;
+    margin: 0 20px;
+    font-size: 20px;
+}
+header .informations a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 10px;
+    margin: 0 10px;
+    font-size: 20px;
+}
+#connexion {
+    color: #00a100;
+}
+#deconnexion {
+    color: red;
+    margin-right: 2rem;
+}
+/********************************************************DROPDOWN*********************************************************/
+.menudown {
+    display: flex;
+    overflow: hidden;
+}
+
+.menudown .menubtn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+    text-decoration: none;
+    color: #000;
+    padding: 10px 10px;
+    margin: 0 50px;
+    font-size: 20px;
+}
+.menudown i {
+    padding-left: 0.6rem;
+}
+
+.menudown-content {
+    margin-top: 5rem;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menudown-content a {
+    float: none;
+    color: black;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.menudown:hover .menudown-content {
+    display: block;
+}
+/***************home******************/
+header .home,
+header .exercices,
+header .informations {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+header .home a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 30%;
+    left: 0;
+    background-color: #00a100;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+
+header .informations::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #00a100;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+
+header .home a:hover::after,
+header .informations:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/********************************************************MAIN*********************************************************/
+.title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+th {
+    font-weight: bold;
+}
+td {
+    vertical-align: middle !important;
+}
+.btn {
+    margin-right: 5px;
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+.add_btn {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    background-color: #00a100;
+}
+.btn-sm {
+    display: inline-block;
+}
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+.user_form {
+    display: inline-block;
+}
+/***********************FOOTER***********************/
+footer {
+    margin-top: 5rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: auto;
+    background-color: #000;
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content img {
+    margin-top: 0.5rem;
+    width: 150px;
+    height: 120px;
+}
+.footer-content h3 {
+    font-size: 1rem;
+    margin-top: 2rem;
+    font-weight: 400;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0 1rem 0;
+}
+.socials li {
+    padding: 0 20px;
+    margin: 0 10px;
+}
+.socials a {
+    text-decoration: none;
+    color: white;
+}
+.socials a i {
+    font-size: 1.5rem;
+    transition: color 0.4s ease;
+    padding: 0.8rem 0;
+}
+.socials li:hover {
+    border: 1px solid white;
+    border-radius: 20px;
+}
+footer p {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
